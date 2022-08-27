@@ -6,6 +6,8 @@ public class PlayerMotor : MonoBehaviour
 {
     private CharacterController controller;
 
+    public DynamicJoystick variableJoystick;
+
     public float forwardspeed = 10.0f;
     public float dragSpeed = 5.0f;
     private Vector3 moveVector;
@@ -40,10 +42,11 @@ public class PlayerMotor : MonoBehaviour
 
         moveVector.y = verticalVelocity;
 
+        //Movement_With_moveVector();
         moveVector.z = forwardspeed;
 
 
-        controller.Move(moveVector * Time.deltaTime);
+        controller.Move(moveVector *Time.fixedDeltaTime);
     }
 
     //void Movement()
@@ -53,13 +56,13 @@ public class PlayerMotor : MonoBehaviour
     //        Touch touch = Input.GetTouch(0);
     //        Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
     //        touchPosition.z = 0f;
-            
+
     //        turnVector.y = 0;
     //        // transform.position = touch.position;
 
     //        if (touch.position.x < (float)(Screen.width / 2.0f))
     //        {
-                
+
     //            turnVector.x = touchPosition.x;
     //            turnVector.z = speed;
     //            //rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
@@ -89,20 +92,24 @@ public class PlayerMotor : MonoBehaviour
             touchPosition.z = 0f;
 
 
-            if (touch.position.x < (float)(Screen.width / 2.0f))
-            {
+            //if (touch.position.x < (float)(Screen.width / 2.0f))
+            //{
 
 
-                moveVector.x = Vector3.right.x * dragSpeed;
-                print("Left press");
-            }
+            //    moveVector.x = Vector3.right.x * dragSpeed;
+            //    print("Left press");
+            //}
 
-            if (touch.position.x > (float)(Screen.width / 2.0f))
-            {
-                moveVector.x = Vector3.left.x * dragSpeed;
+            //if (touch.position.x > (float)(Screen.width / 2.0f))
+            //{
+            //    moveVector.x = Vector3.left.x * dragSpeed;
 
-                print("Right press");
-            }
+            //    print("Right press");
+            //}
+
+            moveVector = Vector3.left * variableJoystick.Horizontal * dragSpeed;
+
+            
 
             print(touch.position.x);
         }
