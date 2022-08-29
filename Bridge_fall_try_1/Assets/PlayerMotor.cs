@@ -33,7 +33,7 @@ public class PlayerMotor : MonoBehaviour
             verticalVelocity -= gravity * Time.deltaTime;
         }
 
-
+         
         Movement_With_moveVector();
 
         //Movement_3rd_try();
