@@ -8,7 +8,7 @@ public class Hitbyplayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "MainPlayer")
+        if(other.tag == "Player")
         {
             
             this.gameObject.tag = other.tag;

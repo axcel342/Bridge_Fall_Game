@@ -14,6 +14,25 @@ public class CharacterAnimationController
         _animator = animator; 
     }
 
+    public void PlayAnimation(AnimationType type)
+    {
+        switch(type)
+        {
+            case AnimationType.Idle:
+                PlayIdle();
+                break;
+            case AnimationType.Running:
+                PlayRunning();
+                break;
+            case AnimationType.RightTurn:
+                PlayRightTurn();
+                break;
+            case AnimationType.LeftTurn:
+                PlayLeftTurn();
+                break;
+        }
+    }
+
     private void PlayIdle()
     {
         _animator.SetTrigger(IdleKey);

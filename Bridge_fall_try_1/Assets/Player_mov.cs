@@ -35,7 +35,7 @@ public class Player_mov : MonoBehaviour
                 rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
                 print("Left press");
             }
-
+            
             print(touch.position.x);
         }
     }
