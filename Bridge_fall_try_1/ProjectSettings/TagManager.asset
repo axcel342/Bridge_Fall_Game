@@ -6,6 +6,9 @@ TagManager:
   tags:
   - MainPlayer
   - Obstacle
+  - Finish_Line
+  - Ground
+  - base
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class CharacterControl : MonoBehaviour
     {
 
       //  if (Input.GetKeyDown(KeyCode.Space))
-            PlayerCharacterSequence();
+            //PlayerCharacterSequence();
     } 
     
     private void PlayerCharacterSequence()

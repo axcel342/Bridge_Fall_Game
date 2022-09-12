@@ -1,19 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
 {
     private CharacterController controller;
-
     public DynamicJoystick variableJoystick;
+
+    public Animator anim;
 
     public float forwardspeed = 10.0f;
     public float dragSpeed = 5.0f;
     private Vector3 moveVector;
     private float gravity = 12.0f;
     private float verticalVelocity = 0.0f;
-
+    private bool check_if_falling = false;
 
     void Start()
     {
@@ -23,16 +22,27 @@ public class PlayerMotor : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //print(Time.time);
+
         moveVector = Vector3.zero;
 
         if (controller.isGrounded)
         {
             verticalVelocity = 0.0f;
+            //print("notfalling");
         }
 
-        else
+        else 
         {
             verticalVelocity -= gravity * Time.deltaTime;
+            //print("falling");
+            if (check_if_falling == false)
+            {
+                check_if_falling = true;
+                //FindObjectOfType<GameManager>().EndGame();
+                //print("failed game");
+
+            }
         }
 
 
@@ -45,8 +55,13 @@ public class PlayerMotor : MonoBehaviour
         //Movement_With_moveVector();
         moveVector.z = forwardspeed;
 
+        this.anim.SetFloat("vertical", moveVector.z);
+        this.anim.SetFloat("horizontal", moveVector.x);
+
 
         controller.Move(moveVector *Time.fixedDeltaTime);
+
+
     }
 
     //void Movement()
