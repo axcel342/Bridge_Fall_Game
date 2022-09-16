@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject completelevelUi;
     public GameObject RetrylevelUi;
+
     public void EndGame()
     {
         completelevelUi.SetActive(true);
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     {
         RetrylevelUi.SetActive(true);
     }
+
     public void NextGame()
     {
         NextLevel();
@@ -36,3 +38,5 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
+
+

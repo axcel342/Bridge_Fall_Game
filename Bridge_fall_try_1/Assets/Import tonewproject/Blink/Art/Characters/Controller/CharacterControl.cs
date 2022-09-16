@@ -47,4 +47,6 @@ public class CharacterControl : MonoBehaviour
     private void PlayRunningAnimation() => _animationController.PlayAnimation(AnimationType.Running);
     private void PlayRightTurnAnimation() => _animationController.PlayAnimation(AnimationType.RightTurn);
     private void PlayLeftTurnAnimation() => _animationController.PlayAnimation(AnimationType.LeftTurn);
+    private void PlayFallAnimation() => _animationController.PlayAnimation(AnimationType.Fall);
+    private void PlayDanceAnimation() => _animationController.PlayAnimation(AnimationType.Dance);
 }

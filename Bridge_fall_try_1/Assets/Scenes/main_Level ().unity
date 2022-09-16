@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4431753, g: 0.49218726, b: 0.5716753, a: 1}
+  m_IndirectSpecularColor: {r: 0.44571632, g: 0.49542314, b: 0.5742476, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -809,7 +809,7 @@ Transform:
   - {fileID: 1707336607}
   - {fileID: 326930088}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &26712952
 GameObject:
@@ -1172,6 +1172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 58308769}
+  anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
 --- !u!114 &42477668
@@ -9028,6 +9029,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375121773}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &385240185 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2990882515461911631, guid: 589ea9f0fe2bacc4f9315f235ef5afe3, type: 3}
+  m_PrefabInstance: {fileID: 1118380073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &388800390
 GameObject:
   m_ObjectHideFlags: 0
@@ -17321,6 +17327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 58308769}
+  anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
 --- !u!114 &704778722
@@ -17524,7 +17531,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 52.432, y: 165.043, z: 197.806}
 --- !u!1 &717488439
 GameObject:
@@ -23116,7 +23123,7 @@ Transform:
   - {fileID: 2100460099}
   - {fileID: 764789778}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &920880233
 GameObject:
@@ -24309,12 +24316,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.0007836032, y: 0.9694251, z: -0.24537425, w: -0.0024374954}
-  m_LocalPosition: {x: 0, y: 14.1, z: 42.6}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000004}
+  m_LocalPosition: {x: 0, y: 13.099998, z: 46.299995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1140666727}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 28.408, y: 180.283, z: -0.021}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -24328,9 +24335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a90379725d0fdf247815276b948ae5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1140666727}
-  offset: {x: 0, y: 14.1, z: 37.2}
-  Camera_rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &981959359
 GameObject:
   m_ObjectHideFlags: 0
@@ -27346,7 +27350,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 369242155258200248, guid: 589ea9f0fe2bacc4f9315f235ef5afe3, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 369242155258200248, guid: 589ea9f0fe2bacc4f9315f235ef5afe3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27394,7 +27398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199878353965956407, guid: 589ea9f0fe2bacc4f9315f235ef5afe3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 589ea9f0fe2bacc4f9315f235ef5afe3, type: 3}
@@ -28148,6 +28152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 58308769}
+  anim: {fileID: 385240185}
   forwardspeed: 10
   dragSpeed: 7
 --- !u!143 &1140666724
@@ -28175,7 +28180,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140666722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28230,6 +28235,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 963194228}
   - {fileID: 84637670}
   m_Father: {fileID: 20935834}
   m_RootOrder: 3
@@ -31708,6 +31714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 58308769}
+  anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
 --- !u!1 &1316022857
@@ -40598,6 +40605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 58308769}
+  anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
 --- !u!1 &1680515848
@@ -51384,6 +51392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableJoystick: {fileID: 58308769}
+  anim: {fileID: 0}
   forwardspeed: 7
   dragSpeed: 7
 --- !u!114 &2114547979
