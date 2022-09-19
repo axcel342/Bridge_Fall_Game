@@ -4,6 +4,4 @@ public enum AnimationType
     Running,
     RightTurn,
     LeftTurn,
-    Fall,
-    Dance,
 }

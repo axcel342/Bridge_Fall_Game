@@ -8,8 +8,6 @@ public class CharacterAnimationController
     private static int RunningKey = Animator.StringToHash("Running");
     private static int RightTurnKey = Animator.StringToHash("RightTurn");
     private static int LeftTurnKey = Animator.StringToHash("LeftTurn");
-    private static int FallKey = Animator.StringToHash("Fall");
-    private static int DanceKey = Animator.StringToHash("Dance");
 
     public CharacterAnimationController(Animator animator)
     {
@@ -32,12 +30,6 @@ public class CharacterAnimationController
             case AnimationType.LeftTurn:
                 PlayLeftTurn();
                 break;
-            case AnimationType.Fall:
-                PlayFall();
-                break;
-            case AnimationType.Dance:
-                PlayDance();
-                break;
         }
     }
 
@@ -59,16 +51,6 @@ public class CharacterAnimationController
     private void PlayLeftTurn()
     {
         _animator.SetTrigger(LeftTurnKey);
-    }
-
-    private void PlayFall()
-    {
-        _animator.SetTrigger(FallKey);
-    }
-
-    private void PlayDance()
-    {
-        _animator.SetTrigger(DanceKey);
     }
 
     

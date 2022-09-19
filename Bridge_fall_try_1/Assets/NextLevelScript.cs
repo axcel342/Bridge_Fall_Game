@@ -6,7 +6,6 @@ public class NextLevelScript : MonoBehaviour
 
     public void ButtonPress()
     {
-        print("Button pressed");
         NextLevel.NextGame();
     }
  

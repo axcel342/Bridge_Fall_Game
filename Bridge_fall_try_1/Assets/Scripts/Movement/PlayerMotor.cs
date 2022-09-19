@@ -9,11 +9,11 @@ public class PlayerMotor : MonoBehaviour
 
     public float forwardspeed = 10.0f;
     public float dragSpeed = 5.0f;
-    private Vector3 moveVector;
+    public Vector3 moveVector;
     private float gravity = 12.0f;
     private float verticalVelocity = 0.0f;
     private bool check_if_falling = false;
-
+    public bool Allow_Forward_Movement = true;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -53,7 +53,15 @@ public class PlayerMotor : MonoBehaviour
         moveVector.y = verticalVelocity;
 
         //Movement_With_moveVector();
+
         moveVector.z = forwardspeed;
+
+        if (!Allow_Forward_Movement)
+        {
+            moveVector.z = 0.0f;
+        }
+
+        
 
         this.anim.SetFloat("vertical", moveVector.z);
         this.anim.SetFloat("horizontal", moveVector.x);
