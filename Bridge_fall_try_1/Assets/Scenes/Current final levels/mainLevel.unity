@@ -2307,6 +2307,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!114 &42477668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33738,6 +33740,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!114 &704778722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38750,7 +38754,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3289650
+    rgba: 4281479730
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -42353,6 +42357,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!114 &856896016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43281,6 +43287,8 @@ MonoBehaviour:
   anim: {fileID: 1174445597}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!143 &866130889
 CharacterController:
   m_ObjectHideFlags: 0
@@ -56949,6 +56957,8 @@ MonoBehaviour:
   anim: {fileID: 204648379}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!143 &1140666724
 CharacterController:
   m_ObjectHideFlags: 0
@@ -63517,6 +63527,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!1 &1315359360
 GameObject:
   m_ObjectHideFlags: 0
@@ -80483,6 +80495,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   forwardspeed: 10
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!1 &1680515848
 GameObject:
   m_ObjectHideFlags: 0
@@ -103371,6 +103385,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   forwardspeed: 7
   dragSpeed: 7
+  moveVector: {x: 0, y: 0, z: 0}
+  Allow_Forward_Movement: 1
 --- !u!114 &2114547979
 MonoBehaviour:
   m_ObjectHideFlags: 0
