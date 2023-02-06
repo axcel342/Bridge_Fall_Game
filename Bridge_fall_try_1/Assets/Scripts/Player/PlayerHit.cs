@@ -26,7 +26,7 @@ public class PlayerHit : MonoBehaviour
             playerMotor.anim.SetFloat("horizontal", 0.0f);
             playerMotor.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
-            print("Reached Finish Line");
+            print("Reached Finish Line" + playerMotor.anim.GetFloat("vertical"));
         }
 
         if(other.tag == "base")

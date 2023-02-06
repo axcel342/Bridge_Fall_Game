@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         scenePaths = new string [6] {"Level1" ,"Level2" ,"Level3", "Level4", "Level5", "Level6"};
-        
     }
 
     public void EndGame()
@@ -25,12 +24,10 @@ public class GameManager : MonoBehaviour
     {
         RetrylevelUi.SetActive(true);
     }
-    
     public void NextGame()
     {
         NextLevel();
     }
-    
 
     public void RestartGame()
     {
@@ -42,11 +39,8 @@ public class GameManager : MonoBehaviour
         completelevelUi.SetActive(true);
     }
 
-    
-
     void NextLevel()
     {
-        
         if (SceneManager.GetSceneByBuildIndex(0) == SceneManager.GetActiveScene())
         {
             i = 1;
@@ -77,13 +71,12 @@ public class GameManager : MonoBehaviour
         //    exitUi.SetActive(true);
         //}
 
+
+
         print("entered game manager");
         print(scenePaths[i]);
         SceneManager.LoadScene(scenePaths[i], LoadSceneMode.Single);
-
-
     }
-    
 
     void RestartLevel()
     {
